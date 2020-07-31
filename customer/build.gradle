@@ -1,0 +1,14 @@
+group 'com.programming.customer'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '8.2.1.jre8'
+    compile group: 'net.sf.dozer', name: 'dozer', version: '5.5.1'
+    compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.3.1.RELEASE'
+}

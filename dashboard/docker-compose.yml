@@ -1,0 +1,15 @@
+version: '3'
+services:
+  exer-dashboard-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    user: root
+    networks:
+      - exercise_exer-app-network
+    ports:
+      - "8080:8080"
+
+networks:
+  exercise_exer-app-network:
+    external: true

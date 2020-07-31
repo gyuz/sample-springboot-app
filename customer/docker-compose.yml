@@ -1,0 +1,15 @@
+version: '3'
+services:
+  exer-customer-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    user: root
+    networks:
+      - exercise_exer-app-network
+    ports:
+      - "8081:8081"
+
+networks:
+  exercise_exer-app-network:
+    external: true

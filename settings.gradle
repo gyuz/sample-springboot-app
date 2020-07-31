@@ -1,0 +1,5 @@
+rootProject.name = 'exercise'
+include 'customer'
+findProject(':customer')?.name = 'customer'
+include 'dashboard'
+

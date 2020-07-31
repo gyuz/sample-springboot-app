@@ -1,0 +1,15 @@
+version: '3'
+services:
+  exer-mssql:
+    image: microsoft/mssql-server-linux:2017-latest
+    networks:
+    - exer-app-network
+    environment:
+    - ACCEPT_EULA=Y
+    - SA_PASSWORD=Qwerty@1
+    ports:
+    - "1433:1433"
+
+networks:
+  exer-app-network:
+    driver: bridge
